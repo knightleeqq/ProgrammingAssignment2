@@ -39,3 +39,21 @@ cacheSolve <- function(x, ...) {
         x$setinverse(m)
         m
 }
+ 
+# > source("cachematrix.R")
+# > cc<-makeCacheMatrix(c)
+# > cc$get()
+# [,1] [,2]
+# [1,]    1    3
+# [2,]    2    4
+# > cacheSolve(cc)
+# [,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
+# > cacheSolve(matriz)
+# Error in cacheSolve(matriz) : object 'matriz' not found
+# > cacheSolve(cc)
+# getting cached data
+# [,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
