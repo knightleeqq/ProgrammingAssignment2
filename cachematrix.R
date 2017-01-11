@@ -50,8 +50,7 @@ cacheSolve <- function(x, ...) {
 # [,1] [,2]
 # [1,]   -2  1.5
 # [2,]    1 -0.5
-# > cacheSolve(matriz)
-# Error in cacheSolve(matriz) : object 'matriz' not found
+
 # > cacheSolve(cc)
 # getting cached data
 # [,1] [,2]
